@@ -1,3 +1,13 @@
+let numericArray = [1, 3, 2, 6, 5, 3, 4, 6, 7];
+let find = 6;
+let found = false;
+for (let i = 0; i < numericArray.length && !found; i++) {
+  if (numericArray[i] == find) {
+    found = true;
+  }
+}
+console.log(found);
+
 function calcAmount() {
 let price = 990;
 let amountInput = document.querySelector("input[name='amount-input']");
@@ -12,6 +22,24 @@ else if (amountNumber < 1) {alert("Minimum purchase 1")}
 else {let amount = parseInt(amountNumber) * price;
 showAmount.innerHTML = amount;}
 }
+
+function calcTotal() {
+
+let quantityInput = [document.querySelectorAll("form.burgerQuantity input[name='quantity']")];
+let sum=0;
+for(let i=0; i<quantityInput.length; i++) {
+    
+    sum+=quantityInput[i];
+let price = 990;
+let payable = sum * price;
+showTotal.innerHTML = payable;
+let showTotal = document.querySelector("span.showTotal");
+}}
+calcTotal()
+
+
+
+
 
 function calcFullAmount() {
 let price1 = 990;
@@ -34,8 +62,38 @@ console.log(varOne, varTwo);
 let users=["tom", "joe", "kate"]
 users[1]
 
+function validateForm() {
+    let pricePerPiece = 990;
+let amountInput = document.querySelector("form#order input[name = amount]");
+let priceField = document.querySelector("form#order .message strong");
+let amount = parseInt(amountInput.value);
+let totalAmount = amount * pricePerPiece;
+priceField.innerHTML=totalAmount;
+}
 
+let alertCloseButton = document.querySelectorAll(".close[data-dismiss='alert']");
+for(let i=0; i<alertCloseButton.length; i++){
+  alertCloseButton[i].addEventListener("click", function(ev){
+    this.parentElement.style.display="none";
+  })
+}
 
+//select elem kitoltese
+let toppings = [
+  "bacon",
+  "onion",
+  "egg", 
+  "tomato",
+  "cucumber"];
 
+let toppingsSelect = document.querySelector("#top-input");
+let i=0;
+while(i<toppings.length){
+  let option= document.createElement("option");
+  option.value=toppings[i];
+  option.innerHTML=toppings[i];
+  toppingsSelect.appendChild(option);
+  i++;
+}
 
 
