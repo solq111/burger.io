@@ -8,8 +8,20 @@ for (let i = 0; i < numericArray.length && !found; i++) {
 }
 console.log(found);
 
-function calcAmount() {
+function calcTotal() {
+let quantityInput = [document.querySelector("input.burgerQuantity")];
+let sum=0;
+for(let i=0; i<quantityInput.length; i++) {
+  i = parseInt(i.value); sum+=quantityInput[i];
 let price = 990;
+let payable = sum * price;
+let showTotal = document.querySelector("span.showTotal");
+showTotal.innerHTML = payable;
+}}
+calcTotal()
+
+function calcAmount() {
+let price = 10;
 let amountInput = document.querySelector("input[name='amount-input']");
 let amountNumber = parseInt(amountInput.value);
 amountNumber = isNaN(amountNumber) ? 0 : amountNumber;
@@ -23,19 +35,6 @@ else {let amount = parseInt(amountNumber) * price;
 showAmount.innerHTML = amount;}
 }
 
-function calcTotal() {
-
-let quantityInput = [document.querySelectorAll("form.burgerQuantity input[name='quantity']")];
-let sum=0;
-for(let i=0; i<quantityInput.length; i++) {
-    
-    sum+=quantityInput[i];
-let price = 990;
-let payable = sum * price;
-showTotal.innerHTML = payable;
-let showTotal = document.querySelector("span.showTotal");
-}}
-calcTotal()
 
 
 
@@ -71,29 +70,8 @@ let totalAmount = amount * pricePerPiece;
 priceField.innerHTML=totalAmount;
 }
 
-let alertCloseButton = document.querySelectorAll(".close[data-dismiss='alert']");
-for(let i=0; i<alertCloseButton.length; i++){
-  alertCloseButton[i].addEventListener("click", function(ev){
-    this.parentElement.style.display="none";
-  })
-}
 
-//select elem kitoltese
-let toppings = [
-  "bacon",
-  "onion",
-  "egg", 
-  "tomato",
-  "cucumber"];
 
-let toppingsSelect = document.querySelector("#top-input");
-let i=0;
-while(i<toppings.length){
-  let option= document.createElement("option");
-  option.value=toppings[i];
-  option.innerHTML=toppings[i];
-  toppingsSelect.appendChild(option);
-  i++;
-}
+
 
 

@@ -7,27 +7,32 @@ a { color:rgb(233, 130, 5);
     display: inline-block;
     font-size: 16px;}
 
-
-h1 {color:darkolivegreen; font-size: 48px;}
+    
+h1 {color:darkolivegreen; font-size: 40px;}
 h2 {color: darkolivegreen}
 
 .img-div {background-color:rgb(134, 153, 97);}
-.img-div img {margin: 15px 10px;
-              height: 300px;
-              width: 22.9%;};
+.homeImg {margin: 1.5%;
+              height: 280px;
+              width: 21.5%;};
 
-.menu-img-div {background-color:rgb(134, 153, 97) ;}              
-.menu-img-div img {height: 250px;
-                   margin:15px 10px;
-                width: 18%;}
+.menu-img-div {background-color:rgb(134, 153, 97);}
+.menuImg {height: 230px;
+                   margin:1%;
+                width: 17.6%;}
 
 .extras-div {font-size: 25px;}
 
-fieldset {background-color: whitesmoke;
-margin-top: 30px;}
+.personalDetails-div input {
+    display: block;}
 
-legend {font-weight: bold;}
+fieldset {background-color: whitesmoke;}
 
+legend {font-size: 20px;}
+
+.extrasLabel {
+    font-size: 20px;
+}
 
 p {font-size: 16;}
 

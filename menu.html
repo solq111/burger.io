@@ -16,89 +16,96 @@
         <a href="menu.html"> Menu </a>
         <a href="order.html"> Order </a>
         <a href="about.html">About</a>
-
-        <table style="background-color: rgb(233, 233, 214);" class="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Burger</th>
-                <th scope="col">Price</th>
-                <th scope="col">Order</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Meat Lover</td>
-                <td>990 Ft</td>
-                <td><form action="" class= "burgerQuantity">
-                    <label for="quantity">Amount</label>
-                    <input class="burgerQuantity" type="number" name="quantity" min= "0" max="20" size="4">
-                </form></td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Beef</td>
-                <td>990 Ft</td>
-                <td><form action="" class= "burgerQuantity">
-                    <label for="quantity">Amount</label>
-                    <input class="burgerQuantity" type="number" name="quantity" min= "0" max="20" size="4">
-                </form></td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Chicken</td>
-                <td>990 Ft</td>
-                <td><form action="" class= "burgerQuantity">
-                    <label for="quantity">Amount</label>
-                    <input class="burgerQuantity" type="number" name="quantity" min= "0" max="20" size="4">
-                </form></td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Vegetarian</td>
-                <td>990 Ft</td>
-                <td><form action="" class= "burgerQuantity">
-                    <label for="quantity">Amount</label>
-                    <input class="burgerQuantity" type="number" name="quantity" min= "0" max="20" size="4">
-                </form></td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Smoky</td>
-                <td>990 Ft</td>
-                <td><form action="" class= "burgerQuantity">
-                    <label for="quantity">Amount</label>
-                    <input class="burgerQuantity" type="number" name="quantity" min= "0" max="20" size="4">
-                </form></td>
-              </tr>
-              <tfoot>
-                  <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td>
-                         <div>
-                            Payable: <span class="showTotal">0</span>Ft </div>   
-                         <button onclick="calcTotal()" type="button" class="btn btn-success">Next</button>
-                         </td> 
-                      
-                  </tr>
-              </tfoot>
-            </tbody>
-          </table>    
+    </div>   
+<div class = "container">
+  <div class = "row">
+    <div class = "col-1"></div>
+    <div class = "col-10">
+      <table style="background-color: rgb(233, 233, 214);" class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Burger</th>
+              <th scope="col">Price</th>
+              <th scope="col">Order</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Meat Lover</td>
+              <td>990 Ft</td>
+              <td><form action="" class= "burgerQuantity">
+                  <label for="quantity">Amount</label>
+                  <input class="burgerQuantity" type="number" name="quantity" min= "0" max="20" size="4">
+              </form></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Beef</td>
+              <td>990 Ft</td>
+              <td><form action="" class= "burgerQuantity">
+                  <label for="quantity">Amount</label>
+                  <input class="burgerQuantity" type="number" name="quantity" min= "0" max="20" size="4">
+              </form></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Chicken</td>
+              <td>990 Ft</td>
+              <td><form action="" class= "burgerQuantity">
+                  <label for="quantity">Amount</label>
+                  <input class="burgerQuantity" type="number" name="quantity" min= "0" max="20" size="4">
+              </form></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Vegetarian</td>
+              <td>990 Ft</td>
+              <td><form action="" class= "burgerQuantity">
+                  <label for="quantity">Amount</label>
+                  <input class="burgerQuantity" type="number" name="quantity" min= "0" max="20" size="4">
+              </form></td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Smoky</td>
+              <td>990 Ft</td>
+              <td><form action="" class= "burgerQuantity">
+                  <label for="quantity">Amount</label>
+                  <input class="burgerQuantity" type="number" name="quantity" min= "0" max="20" size="4">
+              </form></td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                       <div>
+                          Payable: <span class="show-amount">0</span>Ft </div>   
+                       <button onclick="calcAmount()" type="button" class="btn btn-success">Next</button>
+                       </td> 
+                    
+                </tr>
+            </tfoot>
+          </tbody>
+        </table>    
+    </div>
+  </div>
+</div>
           
 <div class="menu-img-div" >
-    <img src="smokyimg\meatlover.jpeg" alt="Meat Lover"> 
-    <img src="smokyimg\burger - Copy.jpg" alt="Beef">  
-    <img src="smokyimg\chicken.jpeg" alt="Chicken">
-    <img src="smokyimg/vegy.jpeg" alt="Vegetarian">
-    <img src="smokyimg/burger .jpg" alt="Smoky">
+    <img class="menuImg" src="smokyimg\meatlover.jpeg" alt="Meat Lover"> 
+    <img class="menuImg" src="smokyimg\burger - Copy.jpg" alt="Beef">  
+    <img class="menuImg" src="smokyimg\chicken.jpeg" alt="Chicken">
+    <img class="menuImg" src="smokyimg/vegy.jpeg" alt="Vegetarian">
+    <img class="menuImg" src="smokyimg/burger .jpg" alt="Smoky">
 
 </div>
    
     
-    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
 </body>
 
 </html>

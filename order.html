@@ -1,104 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="smoky.css">
 </head>
 
 <body>
-    <div class= "tabs">
+    <div class="tabs">
         <a href="home.html"> Home </a>
         <a href="menu.html"> Menu </a>
         <a href="order.html">Order </a>
         <a href="about.html">About</a>
-       
-    <fieldset>
-        <legend>Choose more:</legend>
-    <div class= "extras-div">
-    <span>Extras:</span>
-    <div >
-           <input id= "nothing" name="extra" type="radio" value=0>
-           <label for="nothing">No thanks</label>
-    </div>
-    <div>
-        <input id= "cheese" name="extra" type="radio" value=0>
-        <label for="cheese">Cheese</label>
-    </div>
-    <div>
-        <input id= "double-meat" name="extra" type="radio" value=0>
-        <label for="double-meat">Double Meat</label>
-    </div>
-    <div>
-        <input id= "beetroot" name="extra" type="radio" value=0>
-        <label for="beetroot">Beetroot</label>
-    </div>
-    <div>
-        <input id= "onion" name="extra" type="radio" value=0>
-        <label for="onion">Onion</label>
-    </div>
-    </div></fieldset>
 
-    <fieldset>
-        <legend>Personal details:</legend>
-        <div>
-            <label for="name">Name*:</label>
-            <input id="name" name="name" type="text">
-        </div>
-        <div>
-            <label for="email">Email address*:</label>
-            <input id="email" name="email" type="text">
-        </div>
-        <div>
-            <label for="tel">Telephone*:</label>
-            <input id="tel" name="tel" type="text">
-        </div>
-        <div>
-            <label for="address">Delivery address*:</label>
-            <input id="address" name="address" type="text">
-        </div>
-        <div>
-            <label for="comment">Comment:</label>
-            <input id="comment" name="comment" type="textarea">
-        </div>
-    </fieldset>
-
-<div class="container">
-    <div class= "row">
-    <div class= "col-3"></div>
-    <div class= "col-6">
-
-<div class="alert alert-success alert-dismissible fade show" role="alert">
-    <strong>Dear costumer </strong> Please fill up the form.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-       <span aria-hidden="true">&times;</span>
-    </button>
-</div>
-
-        <form action="">
-            <div class= "form-group">
-                <label for="">Topping</label>
-                <select id="top-input" name="top-input" class= "form-control">
-                </select>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <fieldset>
+                        <legend>Choose more:</legend>
+                        <div class="extras-div">
+                            <span>Extras:</span>
+                            <div>
+                                <input id="nothing" name="extra" type="radio" value=0>
+                                <label class = "extrasLabel" for="nothing">No thanks</label>
+                            </div>
+                            <div>
+                                <input id="cheese" name="extra" type="radio" value=0>
+                                <label class = "extrasLabel" for="cheese">Cheese</label>
+                            </div>
+                            <div>
+                                <input id="double-meat" name="extra" type="radio" value=0>
+                                <label class = "extrasLabel" for="double-meat">Double Meat</label>
+                            </div>
+                            <div>
+                                <input id="beetroot" name="extra" type="radio" value=0>
+                                <label class = "extrasLabel" for="beetroot">Beetroot</label>
+                            </div>
+                            <div>
+                                <input id="onion" name="extra" type="radio" value=0>
+                                <label class = "extrasLabel" for="onion">Onion</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col-4">
+                    <fieldset>
+                        <legend>Personal details:</legend>
+                        <div class="personalDetails-div">
+                            <label for="name">Name*:</label>
+                            <input id="name" name="name" type="text">
+                        </div>
+                        <div class="personalDetails-div">
+                            <label for="email">Email address*:</label>
+                            <input id="email" name="email" type="text">
+                        </div>
+                        <div class="personalDetails-div">
+                            <label for="tel">Telephone*:</label>
+                            <input id="tel" name="tel" type="text">
+                        </div>
+                        <div class="personalDetails-div">
+                            <label for="address">Delivery address*:</label>
+                            <input id="address" name="address" type="text">
+                        </div>
+                        <div class="personalDetails-div">
+                            <label for="comment">Comment:</label>
+                            <input id="comment" name="comment" type="textarea">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class = "col-5">
+                    <div class="container">
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    <strong>Dear costumer </strong> Please fill up the form.
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+            
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="">Topping</label>
+                                        <select id="top-input" name="top-input" class="form-control">
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Amount</label>
+                                        <input id = "toppingsAmount" type="number" name="amount-input" class="form-control"  min= "0" max="10">
+                                        <small class="form-text text-muted"> Minimum 1, Maximum 10</small>
+                                    </div>
+                                    <div class="form-group">
+                                        Payable: <span class="show-amount">0</span>Ft
+                                    </div>
+                                    <button onclick="calcToppings()" type="button" class="btn btn-success">Order</button>
+                                </form>
+                            </div>
+                </div>
             </div>
-            <div class= "form-group">
-                <label for="">Amount</label>
-                <input type="number" name="amount-input" class= "form-control">
-                <small class="form-text text-muted"> Minimum 1, Maximum 10</small>
-            </div>
-            <div class="form-group">
-                Payable: <span class="show-amount">0</span>Ft
-            </div>
-            <button onclick="calcAmount()" type = "button" class= "btn btn-success">Order</button>
-        </form>
-    </div>
+        </div>
 
-    </div>
-</div>
-<script src="js/main.js"></script>
+
+
+
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+        <script src="js/order.js"></script>
 </body>
-</html>
 
+</html>
